@@ -2,10 +2,11 @@ syntax = "proto3";
 
 option java_multiple_files = true;
 option java_package = "com.osetrm.proto.common.v1";
-option java_outer_classname = "CommonProto";
 
 package osetrm.common.v1;
 
-message Decimal {
-  string value = 1;
+enum DayCountConvention {
+  DAY_COUNT_CONVENTION_UNSPECIFIED = 0;
+  DAY_COUNT_CONVENTION_A001 = 1;
+  //TODO finish day count
 }

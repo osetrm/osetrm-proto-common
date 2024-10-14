@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.osetrm.proto.common.v1";
+
+package osetrm.common.v1;
+
+message Decimal {
+  int64 units = 1; // The integral part of the decimal number
+  int32 scale = 2; // The number of digits after the decimal point
+}

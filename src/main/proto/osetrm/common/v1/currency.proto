@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.osetrm.proto.common.v1";
+
+package osetrm.common.v1;
+
+// ISO 4217 https://www.iban.com/currency-codes
+enum Currency {
+  CURRENCY_UNSPECIFIED = 0;
+  CURRENCY_GBP = 826;
+  CURRENCY_USD = 840;
+}
